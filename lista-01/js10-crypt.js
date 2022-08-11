@@ -6,7 +6,6 @@
  * ENTRADA          SAÍDA
  * abacate          bcbduf
  * zebra            @fcsb
- * Zebra            $fcsb
  * 
  * DICAS:
  * É uma variante do exercício js06
@@ -24,10 +23,26 @@
  */
 
 // Entrada
-var texto = 'abacate'
+var texto = ['abacate', 'zebra']
 
 // implemente aqui uma lógica para criptografar o texto
 
-var textoCripto = 'bcbduf'
+var texto = 'zebra'
+    contador = 0
+    criptografado= ''
 
-console.log(textoCripto)
+for (var indice in texto){
+    letraNumero = texto.charCodeAt(contador) +1
+    contador ++
+    
+    if (letraNumero == 123){
+        criptografado += '@'
+    }
+    else if (letraNumero == 91){
+        criptografado += '$'
+    }
+    else{
+        criptografado += String.fromCharCode(letraNumero)
+    }
+}
+console.log(criptografado)
