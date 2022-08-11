@@ -5,7 +5,6 @@
  * ENTRADA                           SAÍDA
  *    10 e 20                        20
  *    40.5 e 1.5                     42
- *    40,5 e 1,5                     42
  *    A e 40                         'A' não é um número
  *    40 e A                         'A' não é um número
  *
@@ -16,10 +15,52 @@
  */
 
 // Entrada
-var n1 = 'A'
-var n2 = 40
+var n1 = 10
+var n2 = 20
+var resultado = 0
 
-// Saída
-var resultado = '?'
-
+if (typeof(n1) =='number' && typeof(n2) == 'number') {
+    resultado = n1 + n2
+} 
+else{
+    resultado = "'A' não é um número"
+}
 console.log(resultado)
+
+// var n1 = 40.5 
+// var n2 = 1.5
+// var resultado = 0
+
+// if (typeof(n1) =='number' && typeof(n2) == 'number') {
+//     resultado = n1 + n2
+// } 
+// else{
+//     resultado = "'A' não é um número"
+// }
+// console.log(resultado)
+
+
+// var n1 = 'A' 
+// var n2 = 40
+// var resultado = 0
+
+// if (typeof(n1) =='number' && typeof(n2) == 'number') {
+//     resultado = n1 + n2
+// } 
+// else{
+//     resultado = "'A' não é um número"
+// }
+// console.log(resultado)
+
+
+// var n1 = 40 
+// var n2 = 'A'
+// var resultado = 0
+
+// if (typeof(n1) =='number' && typeof(n2) == 'number') {
+//     resultado = n1 + n2
+// } 
+// else{
+//     resultado = "'A' não é um número"
+// }
+// console.log(resultado)

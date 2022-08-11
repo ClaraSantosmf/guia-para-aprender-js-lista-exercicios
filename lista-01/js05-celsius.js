@@ -9,9 +9,12 @@
  */
 
 // Entrada
-var fahrenheit = 89
-
+var fahrenheit = [102, 89, 70]
 // Altere a expressão abaixo para converter Fahrenheit em Celsius
-var celsius = 32
 
-console.log(celsius)
+var resultado = 0
+for (let fahr of fahrenheit) {
+    resultado = (fahr - 32) / 1.8
+    console.log(resultado.toFixed(0))
+}
+

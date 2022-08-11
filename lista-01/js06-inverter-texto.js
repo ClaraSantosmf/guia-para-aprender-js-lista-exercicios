@@ -8,9 +8,15 @@
  */
 
 // Entrada
-var entrada = 'abacate'
+var entrada = ['abacate', '12345']
 
 // gere a variável invertido de forma a transforma a entrada na saída esperada
-var invertido = '?'
 
-console.log(invertido)
+for (entra of entrada) {
+    var invertido = entra.split('').reverse().join('')
+    console.log(invertido)
+}
+
+
+
+
