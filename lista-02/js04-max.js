@@ -8,9 +8,18 @@
  */
 
 // Entrada
-var entrada = [1,1,40]
+var entrada = [[1,1,40], [1,3,5,7,8,10,3], [40,1,1,0,-10]]
 
 var maior = 0
 
+for (entra of entrada){
 
-console.log(maior)
+    for (elemento of entra){
+        if (elemento > maior){
+            maior = elemento
+        }
+    }
+    console.log(maior)
+    maior = 0
+}
+

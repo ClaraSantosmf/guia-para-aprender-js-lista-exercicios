@@ -12,9 +12,9 @@
  */
 
 // Entrada
-var entrada = [40,42,1,0,-10]
-
-var segundoMaior = 40
-
-
+var entrada = [[40,42,1,0,-10], [1,1,40], [40,42,1,0,-10]]
+for (entra of entrada){
+    entra.sort()
+    segundoMaior = entra[entra.length - 2]
 console.log(segundoMaior)
+}

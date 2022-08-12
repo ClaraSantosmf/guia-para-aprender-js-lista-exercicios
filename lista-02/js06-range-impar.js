@@ -9,6 +9,8 @@
 // Entrada
 var range = [1, 150]
 
+
+
 var impares = []
 
 
