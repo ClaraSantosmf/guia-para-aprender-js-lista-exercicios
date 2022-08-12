@@ -5,14 +5,39 @@
  * [1,3,5,7,8,10]        5.7
  * [1,1,40]             14.0
  */
-
 // Entrada
-var entrada = [1,1,40]
+var notas = [10, 8, 9.5, 7, 10]
+var totalDeNotas = 0
 
-var soma = 0
+for (let nota of notas) {
+    totalDeNotas += nota
+}
+quantidadeDeNotas = notas.length
+media = totalDeNotas/quantidadeDeNotas
 
-// percorrer a lista e fazer a somatória dos elementos
+var resultado = '👉 A média das ' + quantidadeDeNotas + ' notas do bimestre é ' + media.toFixed(1)
+console.log(resultado)
 
-let media = 0
+var notas = [8, 8, 8]
+var totalDeNotas = 0
 
-console.log(media.toFixed(1))
+for (let nota of notas) {
+    totalDeNotas += nota
+}
+quantidadeDeNotas = notas.length
+media = totalDeNotas/quantidadeDeNotas
+
+var resultado = '👉 A média das ' + quantidadeDeNotas + ' notas do bimestre é ' + media.toFixed(1)
+console.log(resultado)
+
+var notas = [7, 5, 5.5, 6, 5]
+var totalDeNotas = 0
+
+for (let nota of notas) {
+    totalDeNotas += nota
+}
+quantidadeDeNotas = notas.length
+media = totalDeNotas/quantidadeDeNotas
+
+var resultado = '👉 A média das ' + quantidadeDeNotas + ' notas do bimestre é ' + media.toFixed(1)
+console.log(resultado)

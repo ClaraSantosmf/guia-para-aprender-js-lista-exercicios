@@ -13,4 +13,20 @@
  * qualquer outra coisa, $   false
  */
 
+// implemente aqui o condicional para retornar o boolean (true/false) com base na entrada
+var resultado = false;
 // Entrada
+var entrada = ['Y', 'Yes', 'YES', 'yes', 'y', 'S', 'SIM', 's', 'sim', 'Sim', '1', '👍' ,'n', 'N', 'J', 'espaço']
+
+let afirmacoes = ["Y","y","yes","S","sim", "👍"]
+
+for (entra of entrada){
+    if (afirmacoes.includes(entra)){
+        resultado = true
+        console.log('Resultado de:' + entra + ' ' + resultado)
+    }
+    else {
+        resultado = false
+        console.log('Resultado de:' + entra + ' ' + resultado)
+    }
+}

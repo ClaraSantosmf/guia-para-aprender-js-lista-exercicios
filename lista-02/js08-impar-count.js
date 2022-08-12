@@ -9,16 +9,17 @@
  */
 
 // Entrada
+
 var entrada = [1,2,3,4,5,6,7]
-var impares = pares = 0
+
+var impar = par = 0
 
 for (numero of entrada){
-    if (numero%2 == 0){
-        pares++
+    if (numero%2==0){
+        par ++
     }
     else{
-        impares++
+        impar++
     }
 }
-
-console.log(`Números impares: ${impares}, números pares: ${pares}`)
+console.log(`São ${par} números pares, e ${impar} impares`)
