@@ -9,9 +9,14 @@
 // Entrada
 var range = [1, 150]
 
-
+var contador = range[0]
 
 var impares = []
+
+while (contador <= range[1]) {
+    impares.push(contador)
+    contador += 2
+}
 
 
 console.log(impares)

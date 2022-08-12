@@ -10,11 +10,15 @@
 
 // Entrada
 var entrada = [1,2,3,4,5,6,7]
+var impares = pares = 0
 
-// processamento
+for (numero of entrada){
+    if (numero%2 == 0){
+        pares++
+    }
+    else{
+        impares++
+    }
+}
 
-//saida
-var impares = 4,
-    pares = 3
-
-console.log(`${impares} ${pares}`)
+console.log(`Números impares: ${impares}, números pares: ${pares}`)

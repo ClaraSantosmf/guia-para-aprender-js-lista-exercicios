@@ -16,8 +16,15 @@
  */
 
 // Entrada
-var entrada = 5
-
 var tabuada = [5, 10, 15]
+contador = 0
 
-console.log(tabuada)
+for (entrada of tabuada){
+    console.log("Tabuada de", entrada)
+    while (contador < 10){
+        resultado = contador * entrada
+        console.log(contador,"*", entrada, "=", resultado)
+        contador++
+    }
+    contador = 0 
+}
