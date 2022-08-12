@@ -12,6 +12,14 @@ var entrada = [1,3,5,7,8]
 var saida = []
 
 // gerar a lista de saida
-saida = ['impar', 'impar', 'impar', 'impar', 'par']
+
+for (entra of entrada) {
+    if (entra % 2 == 0){
+        saida.push('par')
+    }
+    else{
+        saida.push('impar')
+    }
+}
 
 console.log(saida)
